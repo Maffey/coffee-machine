@@ -160,6 +160,8 @@ fun main() {
     val coffeeMachine = CoffeeMachine()
 
     while (coffeeMachine.status != CoffeeMachine.Companion.Status.OFFLINE) {
+        // TODO: change behavior so user is only prompted for input when it's needed.
+        //  Then, change the structure of public method. [if statement should do the job here]
         coffeeMachine.promptManager(scanner)
     }
 }
